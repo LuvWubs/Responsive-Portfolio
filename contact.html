@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-
   </head>
   <body>
     <main>
@@ -22,18 +21,23 @@
           <li id = "contact"><a href = "contact.html">Contact</a></li>
         </ul>
       </nav>
-        <section class ="bio">
-          <div id = "aboutMe">About Me</div>
-          <div id = "p">
-            <img id = "me" src="./assets/images/screenshot.jpg" alt="Diana Schiele" height="200">
-            <div id="about-content">
-              <p>Frankly, my dear, I don't give a damn. Frankly, my dear, I don't give a damn. Frankly, my dear, I don't give a damn. Frankly, my dear, I don't give a damn. Frankly, my dear, I don't give a damn. Frankly, my dear, I don't give a damn. Frankly, my dear, I don't give a damn. Frankly, my dear, I don't give a damn.</p>
-              <br>
-              <p>It's fate, you know. Nobody can stop fate, nobody can. It's fate, you know. Nobody can stop fate, nobody can. It's fate, you know. Nobody can stop fate, nobody can. It's fate, you know. Nobody can stop fate, nobody can. It's fate, you know. Nobody can stop fate, nobody can. It's fate, you know. Nobody can stop fate, nobody can. </p>
-              <br>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <section class ="contact-fields">
+          <div id = "input-group">Contact me through email!</div>
+          <form class = "user-contact" action="mailto:dianaschiele@gmail.com">
+            <div>Name
+            <input type="text" name="name" id="userName" placeholder="ex. Bubbles the sea-monkey">
             </div>
-          </div>
+            <br>
+            <div>Email
+            <input type="text" name="email" id="userEmail" placeholder="ex. undaDc@pacificOcean.com">
+            </div>
+            <br>
+            <div>Message
+            <textarea name="text" id="userMessage" placeholder="What did the Buddhist ask the hot dog vendor?" style="width:100%; height:150px"></textarea>
+            </div>
+            <br>
+            <input type="submit" value="Submit" id="submit">
+          </form>
         </section>
         <aside class = "contact">
           <div id = "connect">Connect With Me!</div>
@@ -49,4 +53,4 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
-</html>
+  </html>
